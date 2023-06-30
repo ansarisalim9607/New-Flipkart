@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <link href="index.css" rel="stylesheet"/>
+        <link href="./f logo.jpg" rel="icon"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            function changeMode(){
+                let mybody = document.body;
+                mybody.classList.toggle('mydark')
+            }
+
+            function loadCoupon(){
+                document.getElementById('coupon').style.visibility = 'visible';
+                document.getElementById('main').style.opacity = '0.7'
+            }
+            
+            function closeCoupon(){
+                document.getElementById('coupon').style.visibility = 'hidden';
+                document.getElementById('main').style.opacity = '1'
+            }
+        </script>
+        
+    </head>
+    <body>
+        <nav>
+            <a href="#"class="dark">
+                <button onClick="geolocation()"><i class="fa-solid fa-location-dot"></i>Ahemdabad</button>  
+            </a>
+            <div class="logo">
+                <img src="./flipkart-plus_8d85f4.png"/ width="75" height="20px">
+                <p>
+                    Explore
+                    <span class="plus-color">plus</span>
+                    <img src="./part ima.png"/ width="10px" height="10px">
+                </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for products brands and more">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            
+            <button class="loginBtn">Login</button>
+
+            <a href="#" class="Navlink">Become a Seller</a>
+            <a href="#"class="Navlink angledownIcon">
+                More
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#"class="Navlink">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>    
+                Cart
+            </a>
+            <a href="#"class="dark">
+                <button onclick="changeMode()"><i class="fa-solid fa-moon"></i></button>
+            </a>
+            </a>
+        </nav>
+        <!--headersection-->
+        <section class="topProductNavbar">
+            <div class="topProductNavbar_Nav">
+                <img src="./gol.webp"/>
+                <p>Top Offers</p>
+            </div>
+            
+            <div class="topProductNavbar_Nav">
+                <img src="./mobil.webp"/>
+                <p>Mobile & Tablets</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./elv.webp"/>
+                <p>Electronics</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./tv.webp"/>
+                <p>TVs&Appliances</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./fas.webp"/>
+                <p>Fashion</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./bea.webp"/>
+                <p>Beaty</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./hom.webp"/>
+                <p>Home & Frniture</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./fligh.webp"/>
+                <p>Flights</p>
+            </div>
+
+            <div class="topProductNavbar_Nav">
+                <img src="./frocery.webp"/>
+                <p>Grocery</p>
+            </div>
+            
+        </section>
+
+        <!--slider-->
+
+      <center>
+        <div id="devCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#devCarousel" data-slide-to="1"></li>
+                <li data-target="#devCarousel" data-slide-to="2"></li>
+                <li data-target="#devCarousel" data-slide-to="3"></li>
+                <li data-target="#devCarousel" data-slide-to="5"></li>
+            </ol>
+           <div class="carousel-inner">
+               <div class="item active">
+                   <img src="./one.jpg" alt="one" />
+               </div>
+               <div class="item">
+                <img src="./two.jpg" alt="two" width="900px" height="500"/>
+                </div>
+                <div class="item">
+                    <img src="./three.jpg" alt="three" width="900px" height="500"/>
+                </div>
+                <div class="item">
+                    <img src="./four.jpg" alt="four" width="900px" height="500"/>
+                </div>
+                <div class="item">
+                    <img src="./five.jpg" alt="five" width="900px" height="500"/>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+      </center>
+             
+        <!--coupon-->
+
+        <div id="main">
+            <center>
+                <h1></h1>
+            </center>
+        </div>
+        <div id="coupon">
+            <button onclick="closeCoupon()">&times;</button>
+        </div>
+        <script>
+            window.onload = loadCoupon()
+        </script>
+
+        <!--jeolocation-->
+
+        
+        <p id="out"></p>
+        <p id="weather"></p>
+        <script>
+            let x =document.getElementById('out');
+            let y =document.getElementById('weather');
+            function geolocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition)
+                    }else{
+                        x.innerText ="geo not supported"
+                    }
+            }
+            function showPosition(data){
+                console.log(data)
+            }
+        </script>
+
+        <!--best of Electronic -->
+        <div class="bestElectronic-container">
+            <div class="left-part">
+                <div class="leftPart-top">
+                    <div class="leftpart-top-content">
+                        <h3>Top Selection</h3>
+                        <p>Top Selection</p>
+                    </div>
+                    <button class="viewAll_btn"> VIEW ALL </button>
+                </div>
+                <div class="leftpart-card-container">
+                    
+                </div>
+            </div>
+            
+            <div class="card-product">
+                <img src="./i phone.jpg" alt="i phone"height="180px"width="300px">         
+                <a href="https://ansarisalim9607.github.io/Pro-listingMobil/"> IPHONE</a>
+            </div>
+            <div class="card-product">
+                <img src="./neshkefe.jpg" alt="neshkefe"height="180px"width="180px">        
+                <a href="https://ansarisalim9607.github.io/Pro-listingnescafe/">NESCAFE </a>
+            </div>
+            <div class="card-product">
+                <img src="./fur.jpg" alt="fur"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingFurniture/">SOFASET</a>
+            </div>
+            <div class="card-product">
+                <img src="./sh.webp" alt="sh"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingShirt/">SHIRT </a>
+            </div>
+            <div class="card-product">
+                <img src="./bose.jpg" alt="bose"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingHeadphone/">HEADPHONES </a>
+            </div>
+            <div class="card-product">
+                <img src="./sg.jpg" alt="sg"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-shoes/">SHOES </a>
+            </div>
+            <a href="#"class="dark">
+            </a>
+                       
+        </div>
+
+        <hr style="border:2px solid rgb(247, 247, 247);">
+
+        <!--best of Electronic 2-->
+        <div class="bestElectronic-container">
+            <div class="left-part">
+                <div class="leftPart-top">
+                    <div class="leftpart-top-content">
+                        <h3>Best of Electronics</h3>
+                        <p>Best of Electronics</p>
+                    </div>
+                    <button class="viewAll_btn"> VIEW ALL </button>
+                </div>
+                <div class="leftpart-card-container">
+                    
+                </div>
+            </div>
+            
+            <div class="card-product">
+                <img src="./del.webp" alt="car"height="180px"width="300px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingLeptop/">Laptop </a>
+                <h3 class="card-product-name">    </h3>
+                <p class="card-product-price">From ₹73,990</p>
+                <p class="card-product-desc"> ASUS TUF F15</p>
+            </div>
+            <div class="card-product">
+                <img src="./car.webp" alt="car"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingCamera/"> Camera </a>
+                <h3 class="card-product-name"></h3>
+                <p class="card-product-price">From ₹60,623</p>
+                <p class="card-product-desc"> Canon&sony</p>
+            </div>
+            <div class="card-product">
+                <img src="./pro.webp" alt="car"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingProjecter/"> Projector</a>
+                <h3 class="card-product-name"> </h3>
+                <p class="card-product-price">From ₹8,999</p>
+                <p class="card-product-desc"> Salange</p>
+            </div>
+            <div class="card-product">
+                <img src="./bank.webp" alt="car"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingPowerbank/">Premium PowerBanks </a>
+                <h3 class="card-product-name"></h3>
+                <p class="card-product-price">From ₹1,099</p>
+                <p class="card-product-desc"> Mi,realme & more</p>
+            </div>
+            <div class="card-product">
+                <img src="./erp.webp" alt="car"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listingButs/">Techlife Buds t100w </a>
+                <h3 class="card-product-name"></h3>
+                <p class="card-product-price">From ₹1,499</p>
+                <p class="card-product-desc"> realme and boAt</p>
+            </div>
+            <div class="card-product">
+                <img src="./was.webp" alt="car"height="180px"width="180px">
+                <a href="https://ansarisalim9607.github.io/Pro-listing/"> Washing machine </a>
+                <h3 class="card-product-name"></h3>
+                <p class="card-product-price">From ₹26,990</p>
+                <p class="card-product-desc"> Bosch 65.5 kg Drive</p>
+            </div>
+            <a href="#"class="dark">
+            </a>
+                       
+        </div>
+        <hr style="border:1px solid rgb(245, 242, 245);">
+
+        
+        
+
+          
+        <!--second footer section-->
+        <div class="footc">
+          <div class="inner">
+            <div class="infootc">
+                <h5><b>ABOUT</b></h5>
+                <br>
+                <span><b>Contact Us</b></span><br>
+                <span><b>About Us</b></span><br>
+                <span><b>Careers</b></span><br>
+                <span><b>Flipkart Stories</b></span><br>
+                <span><b>Press</b></span><br>
+                <span><b>Flipkart</b></span><br>
+                <span><b>Wholesale</b></span><br>
+                <span><b>Corporat</b></span><br>
+                <span><b>Information</b></span><br>
+            </div>
+            <div class="infootc">
+                <h5><b>HELP</b></h5>
+                <br>
+                <span><b>pAYMENTS</b></span><br>
+                <span><b>shipping</b></span><br>
+                <span><b>Cancellation</b></span><br>
+                <span><b>Returns</b></span><br>
+                <span><b>FAQ</b></span><br>
+                <span><b>Report</b></span><br>
+                <span><b>Infringement</b></span><br>
+                <span><b>EPR Compliance</b></span><br>
+                <span><b>Redressal</b></span><br>
+                <span><b>Return Policy</b></span><br>
+            </div>
+            <div class="infootc" style="height:210px;">
+                <h5><b>SOCIAL</b></h5>
+                <br>
+                <span><b>Facebook</b></span><br>
+                <span><b>Twitter</b></span><br>
+                <span><b>YouTube</b></span><br>
+            </div>
+            <div class="infootc" style="height:210px;">
+                <h5><b>MAIL US:</b></h5>
+                <br>
+                <span><b>Flipkart Internet Private Limited</b></span><br>
+                <span><b>Buildings Alyssa, Begonia
+                &Clove Embassy Tech Village</b></span><br>
+                <span><b>Bengaluru, 560103,Karnataka, India</b></span><br>
+            </div>
+            <div class="infootc" style="height:210px;">
+                <h5><b>ABOUT</b></h5>
+                <br>
+                <span><b>About Us</b></span><br>
+                <span><b>Green Card</b></span><br>
+                <span><b>Store Locator</b></span><br>
+                <span><b>Payment Options</b></span><br>
+                <span><b>Investor relations</b></span><br>
+            </div>
+            <div class="infootc" style="height:210px;">
+                <h5><b>CUSTOMER</b></h5>
+                <br>
+                <span><b>Track Order</b></span><br>
+                <span><b>FAQs</b></span><br>
+                <span><b>Customer Support</b></span><br>
+                <span><b>Return and Exchange Policy</b></span><br>
+                <span><b>Shiping Policy</b></span><br>
+            </div>
+            </div>
+                <div class="down">
+                  <img src="./flipkart-plus_8d85f4.png" alt="flipkart-plus" class="dimg">
+                </div>
+            </div>
+        </div>    
+        <hr style="border:2px solid purple;">
+        <!-- last second--> 
+        <div class="copy">
+            <div class="incopy">
+                <a href="" underline="none:" title="Privacy Policy"> Privacy Policy</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="" underline="none;" title="Terms & Conditions">Terms & Conditions</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="" underline="none;" title="copyright">&copy; ansarisalim9607@gmail.com</a>
+                <div class="dslr">
+                <img src="./visaaa.png" alt="visa" class="ddl">
+                <img src="./rup.png" alt="rup" class="ddl">
+                <img src="./upi.png" alt="upi" class="ddl">
+                <img src="./net benking.png" alt="net bnnking" class="ddl">
+                </div>
+                <hr style="width:80%; border:2px solid crimson;">
+            </div>
+        </div>
+
+

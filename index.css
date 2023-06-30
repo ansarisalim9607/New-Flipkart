@@ -1,0 +1,415 @@
+body{
+    background-color: white;
+    color: black;
+}
+.mydark{
+    background-color: black;
+    color: white;
+}
+
+*{
+    pading:0;
+    margin:0;
+}
+nav{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0px;
+}
+
+.plus-color{
+    color: yellow;
+    font-weight: 900;
+}
+
+.logo p{
+    color: white;
+    height: 2px;
+    position: relative;
+    top: -5px;
+}
+
+.search{
+    background-color: white;
+    padding: 8px;
+    width: 420px;
+    height: 34px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    box-shadow: -7px -7px 10px rgba(0,0,0,0.1);.
+    7px -7px 10px rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+.search input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.loginBtn{
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    color: #2874f0;
+}
+
+.Navlink{
+    margin: 0px 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.dark{
+    margin: 0px 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.angledownIcon i{
+    font-size: 5px;
+}
+
+
+
+
+
+
+
+
+/*******top navbar product *************/
+
+.topProductNavbar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.topProductNavbar_Nav{
+    width: 80px;
+    /* height: 110px; */
+    cursor: pointer;
+    flex: 1;
+}
+.topProductNavbar_Nav img{
+    width: 64px;
+    height: 64px;
+}
+
+.topProductNavbar_Nav p{
+    font-weight: 510;
+}
+
+.topProductNavbar_Nav:hover p{
+    color: #2874f0;
+}
+
+
+
+
+/**************Slider **************/
+
+.slider{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+.sliderImge{
+    width: 100%;
+   /* padding: 0px 10px; */
+   padding-right: 20px;
+   height: 250px;
+   
+}
+
+.Slider_image{
+    display: flex;
+    padding: 10px;
+}
+
+.btn-container{
+    margin:auto;
+    width: 10px;
+}
+.btn{
+    padding: 35px 10px;
+    background-color:white ;
+    font-size: 30px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-right{
+    position:relative;
+    left: -40px;
+}
+
+/***********best of Electronic*********/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 0%;
+    background-color: rgb(238, 234, 234);
+    display: inline;block-size: auto;
+}
+
+.aimg img{
+    width: 100%;
+    height: 100%;
+}
+.bestElectronic-container{
+    color: black;
+    height: 271px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-part{
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.right-part{
+    height: 100%;
+    width: 19%;
+    background-color: white;
+    padding: 0.5em;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.right-part img{
+
+}
+
+.viewAll_btn{
+    background-color: #2874f0;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border:none;
+    padding: 4px 18px;
+    border-radius: 34px;
+}
+.leftPart-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 25%;
+    border-bottom: 1px solid #ccc;
+}
+
+.leftPart-top h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+..leftPart-top p{
+    margin: 0;
+}
+
+
+/********nestroundpart**********/
+
+.leftpart-card-container{
+    height: 75%;
+    overflow: hidden;
+}
+.card-product{
+    width: 200px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.card-product img{
+    width: 110px;
+    cursor: pointer;
+}
+
+.card-product-name{
+    margin: 2px 0;
+    margin: 1px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.card-product-price{
+    margin: 1px 0;
+    color: black;
+}
+.card-product-desc{
+    margin: 1px 0;
+    color: black;
+}
+
+
+.card-product-desc{
+    margin: 0;
+}
+
+.card-producte-desc{
+    color: rgb(60, 153, 60);
+    margin: 19px 0 13px;
+}
+
+
+/*footer*/
+.footin{
+    display:flex;
+    width:80%;
+    height:100px;
+    /* border:1px solid cyan; */
+    margin-left:10%;
+}
+.footin label{
+    justify-content:space-between;
+    align-items: center;
+    padding:30px 0;
+}
+.footin input{
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 0 10px 0;
+    height:45px;
+    margin-top:2.3%;
+    width:30%;
+    margin-left:4%;
+    border-radius:5px;
+}
+.social{
+    width:23%;
+    height:45px;
+    margin-left:13%;
+    margin-top:2.3%;
+    /* border:1px solid black; */
+}
+.sociallogo{
+    height:45px;
+    justify-content:center;
+    align-items:center;
+    margin:0 0 0 4%;
+}
+/* footer section */
+.footc{
+    background-color:#172337;
+    width:100%;
+     /* border:1px solid rgb(255, 14, 14); */
+}
+.inner{
+    display:inline-block;
+    width:90%;
+    height:415px;
+    /* border:2px solid orange; */
+    margin-left:10%;
+    margin-top:3%;
+}
+.infootc{
+    float:left;
+    width:12%;
+    height:320px;
+    /* border:1px solid pink; */
+    margin:0 0 0 2.5%;
+}
+.infootc h5{
+    margin-left:1%;
+    color: white;
+}
+.infootc span{
+    margin-left:1%;
+    margin-top:1%;
+    color: white;
+    line-height:2;
+    font-size:12px;
+}
+.down{
+    color: white;
+    margin-left:38%;
+    margin-top:-11%;
+    height:80px;
+    width:20%;
+    /* border:2px solid orange; */
+}
+.down p{
+    margin-left:5%;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.dimg{
+    height:53px;
+    width:73%;
+}
+.copy{
+    width:100%;
+    height:80px;
+    /* border:1px solid cyan; */
+    justify-content:center;
+    align-items:center;
+}
+.incopy{
+    height:70px;
+    width:80%;
+    margin-left:10%;
+    /* border:1px solid crimson; */
+    margin-top:1.8%;
+}
+.incopy a{
+    margin-top:5%;
+}
+.dslr{
+    margin-left:50%;
+    /* border:1px solid cyan; */
+    height:60px;
+    margin-top:-3%;
+}
+.ddl{
+    height:30px;
+    margin:2%;
+}
+
+
+
+/*coupen section*/
+
+
+#coupon{
+    height: 328px;
+    width: 525px;
+
+    background-image: url("./but.jpg");
+    z-index: 100;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 30%;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
